@@ -1,6 +1,6 @@
 # Lisa - Your AI Co-Founder
 
-Built by Aazar Jan, Muhammad Hashim and Shahbaz Abdullah Magsi
+Built by Shadab Ali Khawaja
 
 Lisa is an open-source voice assistant designed for founders, operators, and visionaries who move at the speed of life. Built to integrate seamlessly with your existing tools, Lisa acts as your co-founder, handling tasks from email drafting to meeting scheduling with simple voice commands. No more app-switching or tab-juggling—just say it, and Lisa gets it done.
 
@@ -36,7 +36,7 @@ Lisa is an open-source voice assistant designed for founders, operators, and vis
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/ourlisaai/lisa.git
+   git clone https://github.com/shadabalikhawaja/LISA.git
    cd lisa
    ```
 
@@ -84,11 +84,6 @@ Lisa is an open-source voice assistant designed for founders, operators, and vis
 ## License
 
 Lisa is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
-
-## Community
-
-- Follow us on X: [@ourlisaai](https://x.com/ourlisaai).
-- Report issues or suggest features on [GitHub Issues](https://github.com/ourlisaai/lisa/issues).
 
 ## Roadmap
 
