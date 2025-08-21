@@ -1,0 +1,58 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Looking for ways to speed up your queries, or scale easily with your serverless or edge functions?
+// Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id Int @id @default(autoincrement())
+  name String
+  username String @unique
+  email String @unique
+  outlook_email String?
+  google_email String?
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  token String?
+  google_login Boolean @default(false)
+  google_access_token String?
+  google_refresh_token String?
+  google_token_expiry String?
+  outlook_login Boolean @default(false)
+  outlook_access_token String?
+  outlook_refresh_token String?
+  outlook_token_expiry String?
+  notion_login Boolean @default(false)
+  notion_access_token String?
+  slack_login Boolean @default(false)
+  slack_bot_access_token String?
+  slack_user_access_token String?
+  slack_user_id String?
+  slack_bot_id String?
+  expiresAt String?
+  preferences String?
+  preferences_added Boolean @default(false)
+  morning_update String?
+  morning_update_check Boolean @default(true)
+  morning_update_preferences String?
+  morning_brief_time String? @default("6:00 AM")
+  timeZone String @default("America/Los_Angeles")
+  phone_number String?
+  company_name String @default("Not Known")
+  position String @default("Not Known")
+  profile_image String?
+}
+
+model Events {
+  id Int @id @default(autoincrement())
+  events String
+}

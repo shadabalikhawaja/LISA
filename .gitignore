@@ -1,0 +1,9 @@
+﻿.env
+*.pem
+*.key
+id_rsa
+id_ed25519
+client_secret*.json
+credentials.json
+token.json
+.ssh/
